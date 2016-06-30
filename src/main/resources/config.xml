@@ -1,0 +1,17 @@
+<xml version="1.0" encoding="UTF-8" >
+    <region>
+        <school>郑州</school>
+        <baseport>6061</baseport>
+        <k528port>6062</k528port>
+    </region>
+    <region>
+        <school>待定</school>
+        <baseport>7071</baseport>
+        <k528port>7072</k528port>
+    </region>
+    <region>
+        <school>待定</school>
+        <baseport>8081</baseport>
+        <k528port>8082</k528port>
+    </region>
+</xml>
