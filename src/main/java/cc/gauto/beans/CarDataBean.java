@@ -9,13 +9,17 @@ import io.netty.channel.Channel;
  */
 public class CarDataBean {
     public Channel channel;
+    public long examId;
+    public String deviceId;
     public double posX;
     public double posY;
     public double speed;
     public double angle;
 
-    public CarDataBean(Channel c, double x, double y, double s, double a) {
+    public CarDataBean(Channel c, long e, String d, double x, double y, double s, double a) {
         this.channel = c;
+        this.examId = e;
+        this.deviceId = d;
         this.posX = x;
         this.posY = y;
         this.speed = s;

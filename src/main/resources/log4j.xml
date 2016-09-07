@@ -39,8 +39,8 @@
 
     <!-- 输出到日志文件 每天一个日志  -->
     <appender name="filelog_daily" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/var/log/basestationserver/server.log" />
-        <param name="DatePattern" value="'server.'yyyy-MM-dd'.log'" />
+        <param name="File" value="/var/log/positioncollector/collector.log" />
+        <param name="DatePattern" value="'collector.'yyyy-MM-dd'.log'" />
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss/} %-5p] [%t] (%c:%L) - %m%n" />
         </layout>

@@ -1,6 +1,5 @@
 package cc.gauto;
 
-import cc.gauto.tcpserver.Controller;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -30,15 +29,9 @@ public class MainServer {
 //            controllers.add(controller);
 //        }
 
-        Controller controller = new Controller(hjBasePort, hjK528Port);
-        controllers.add(controller);
-
-        for (Controller c : controllers) {
-            c.start();
-        }
-        for (Controller c : controllers) {
-            c.join(3);
-        }
+        Controller controller = new Controller();
+        controller.start();
+        controller.join(3);
 
     }
 }
